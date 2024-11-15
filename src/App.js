@@ -66,7 +66,7 @@ const App = () => {
     <section>
       <button className="action-btn" onClick={increase}>Increase</button>
       <button className="action-btn" onClick={decrease}>Decrease</button>
-      <p className="result">{counter}</p>
+      <p className="result">{counter < 0 ? setCounter(0) : counter}</p>
     </section>
   )
 }
